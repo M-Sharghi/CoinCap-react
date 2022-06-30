@@ -4,7 +4,6 @@ import styled from "styled-components";
 let AssetContainerMain=styled.div`
     font-size: 12px;
     font-weight: 600;
-    margin: 0 auto;
     // background-color: rgb(236, 239, 241);
     margin-bottom: 128px;
     margin-top: 64px;
@@ -13,6 +12,7 @@ let AssetContainerMain=styled.div`
 let AssetSwapMain=styled.div`
     width: 400px;
     height: 500px;
+    margin: 0 auto;
     border-radius: 13px;
     background: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 9px;

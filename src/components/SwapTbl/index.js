@@ -1,6 +1,6 @@
 import { AssetContainerMain,AssetSwapMain, AssetSwapContainer, AssetSwapHeader, AssetSwapSellContainer, Connect_Wallet, AssetSwapSell, Shuffle } from "./styles";
 import {Button} from "../Button/styles";
-function Swap() {
+function SwapTbl() {
     return <div>
               <AssetContainerMain>
                     <AssetSwapMain>
@@ -45,5 +45,5 @@ function Swap() {
     </div>;
   }
   
-  export default Swap;
+  export default SwapTbl;
   

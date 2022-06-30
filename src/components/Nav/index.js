@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 let activeStyle = {
   textDecoration: "underline",
   color: "red",
-  backgroundColor: "#ccc"
+  // backgroundColor: "#ccc"
 };
 
 function Nav() {
@@ -28,7 +28,13 @@ function Nav() {
         >
           Exchanges
         </NavLink>
-        <a href="#">Swap</a>
+        <NavLink
+          to="/swap"
+          style={(values) => {
+            return values.isActive ? activeStyle : undefined;
+          }}
+        >Swap
+        </NavLink>
       </NavLinks>
 
       <NavLogo href="#">
