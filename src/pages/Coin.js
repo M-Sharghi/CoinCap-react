@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { get_coin } from "../helpers/server";
-import { get_chart } from "../helpers/server";
-import { get_Exchanges } from "../helpers/server";
+import { get_coin, get_chart, get_Exchanges } from "../helpers/server";
 import Nav from "../components/Nav";
 import Coins from "../components/Coins";
 import History from "../components/History";
@@ -11,14 +9,12 @@ import SwapTbl from "../components/SwapTbl";
 import ExchangeList from "../components/ExchangeList";
 import Footer from "../components/Footer";
 
-
 function Coin() {
   let { name } = useParams();
-  let [data,setData]=useState({});
-  let [history,setHistory]=useState({});
-  let [chart,setChart]=useState([]);
-  let [exchange,setExchange]=useState([]);
-
+  let [data, setData] = useState({});
+  let [history, setHistory] = useState({});
+  let [chart, setChart] = useState([]);
+  let [exchange, setExchange] = useState([]);
 
   useEffect(() => {
     get_coin(name).then((response) => {
@@ -36,9 +32,7 @@ function Coin() {
     get_Exchanges().then((res) => {
       setExchange(res);
     });
-
   }, []);
-  
 
   return (
     <div>
@@ -51,7 +45,7 @@ function Coin() {
         </div>
         <SwapTbl />
       </div>
-      <ExchangeList list={exchange}/>
+      <ExchangeList list={exchange} />
       <Footer />
     </div>
   );

@@ -15,7 +15,7 @@ function App() {
         <Route path="/swap" element={<Swap />} />
         <Route path="/coins/:name" element={<CoinPage />} />
       </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }

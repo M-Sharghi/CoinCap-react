@@ -3,7 +3,6 @@ import Nav from "../components/Nav";
 import Header from "../components/Header";
 import CoinsList from "../components/CoinsList";
 import Footer from "../components/Footer";
-
 import { get_coins } from "../helpers/server";
 
 function Home() {

@@ -4,12 +4,14 @@ let NavLinks = styled.div`
   width: 19%;
 
   & a {
-    width: 27%;
-    height: 50px;
+    padding: 32px;
+    text-align: center;
+
   }
 
   & a:hover {
     background-color: rgb(0, 0, 0, 0.04);
+
   }
 `;
 

@@ -3,9 +3,8 @@ import { NavLinks, NavLogo, NavActions } from "./styles";
 import { NavLink } from "react-router-dom";
 
 let activeStyle = {
-  textDecoration: "underline",
-  color: "red",
-  // backgroundColor: "#ccc"
+  // textDecoration: "underline",
+  color: "red"
 };
 
 function Nav() {

@@ -1,20 +1,33 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .auto {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aFooter {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 1em;
+  font-weight: 20;
+  line-height: 24px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auto {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
