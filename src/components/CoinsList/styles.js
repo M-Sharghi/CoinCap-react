@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+let List_Transition=styled.div`
+    transform: translateY(-140px)
+    `;
 
 let FirstRow=styled.div`
     text-align: left;
@@ -47,4 +50,4 @@ let FirstNameCol=styled.span`
     padding-right: 164px;
 `;
 
-export { FirstRow, OtherRow, NameCol, FirstNameCol };
+export { List_Transition, FirstRow, OtherRow, NameCol, FirstNameCol };

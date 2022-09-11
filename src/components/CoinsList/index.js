@@ -1,11 +1,11 @@
   import numbro from "numbro";
-  import { FirstRow, OtherRow, FirstNameCol, NameCol } from "./styles";
+  import { List_Transition, FirstRow, OtherRow, FirstNameCol, NameCol } from "./styles";
   import { Link } from "react-router-dom";
 
 
   function CoinsList(props) {
     return (
-      <div>
+      <List_Transition>
         <FirstRow className="flex auto">
             <span>Rank</span>
             <FirstNameCol>Name</FirstNameCol>
@@ -21,8 +21,8 @@
           return (
             <OtherRow className="flex auto">
               <span>{item.rank}</span>
-              <img src={`https://assets.coincap.io/assets/icons/${item.symbol.toLowerCase()}@2x.png`} />
-              <NameCol><Link to={`/coins/${item.id}`}>{item.name}</Link></NameCol>
+              <Link to={`/coins/${item.id}`}><img src={`https://assets.coincap.io/assets/icons/${item.symbol.toLowerCase()}@2x.png`} /></Link>
+              <NameCol><Link className="link" to={`/coins/${item.id}`}>{item.name}</Link></NameCol>
               <span>{numbro(item.priceUsd).formatCurrency('$0,0.00')}</span>
               <span>{numbro(item.marketCapUsd).formatCurrency('($ 0.00 a)')}</span>
               <span>{image}</span>
@@ -32,7 +32,7 @@
             </OtherRow>
           );
         })}
-      </div>
+      </List_Transition>
     );
     }
     

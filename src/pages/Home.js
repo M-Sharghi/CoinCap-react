@@ -15,7 +15,7 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div style={{background: "rgb(236, 239, 241)"}}>
       <Nav />
       <Header />
       <CoinsList list={data} />

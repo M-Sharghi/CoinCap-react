@@ -18,7 +18,7 @@ function Exchanges() {
 
 
   return (
-    <div>
+    <div style={{background: "rgb(236, 239, 241)"}}>
       <Nav />
       <Header />
       <ExchangeList list={exchange}/>

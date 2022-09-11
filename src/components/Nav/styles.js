@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
+
+let Nav_Color = styled.div`
+  background-color: #fff;
+`;
+
 let NavLinks = styled.div`
   width: 19%;
 
   & a {
-    padding: 32px;
+    padding: 24px;
     text-align: center;
 
   }
@@ -23,4 +28,4 @@ let NavActions = styled.div`
   width: 25%;
 `;
 
-export { NavLinks, NavLogo, NavActions };
+export { Nav_Color, NavLinks, NavLogo, NavActions };
