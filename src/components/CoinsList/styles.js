@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 let List_Transition=styled.div`
-    transform: translateY(-140px)
+    transform: translateY(-140px);
     `;
 
 let FirstRow=styled.div`
     text-align: left;
     border-bottom: 1px solid #ccc;
-    background-color: rgb(236, 239, 241);
+    background-color: rgb(245, 248, 250);
     border-radius: 4px;
     padding-left: 32px;
     padding-top: 12px;
     padding-bottom:12px;
     font-size: 14px;
+    cursor: pointer;
 
 
     & span {
@@ -29,6 +30,8 @@ let OtherRow=styled.div`
     padding-bottom:16px;
     font-size: 14px;
     background-color: #fff;
+    cursor: pointer;
+
 
     & span {
         width: 100%;
